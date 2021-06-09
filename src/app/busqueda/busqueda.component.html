@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="container">
+
+    <div>
+        <h4>DATOS DE BUSQUEDA</h4>
+        <hr />
+        <button [routerLink]="['/']" class="btn btn-outline-primary">
+            <span>Nueva</span>
+        </button>
+        <hr />
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="inputEmail4" class="form-label">IDENTIFICADOR DEL CI</label>
+                <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-4">
+                <label for="inputPassword4" class="form-label">ID INTERFACE</label>
+                <input type="text"  class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-4">
+                <label for="inputPassword4" class="form-label">ESTADO</label>
+                <select id="inputState" class="form-select">
+                    <option selected>seleccionar...</option>
+                    <option>ACTIVO</option>
+                    <option>INACTIVO</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <hr />
+    <app-detalle></app-detalle>
+</div>
+<app-footer></app-footer>

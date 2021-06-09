@@ -1,0 +1,49 @@
+<div>
+    <h4>DATOS CABECERA</h4>
+    <hr />
+    <form class="row g-3">
+        <div class="col-md-4">
+            <label for="inputEmail4" class="form-label">IDENTIFICADOR DEL CI</label>
+            <input type="text" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-4">
+            <label for="inputPassword4" class="form-label">ID INTERFACE</label>
+            <input type="text" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-md-4">
+            <label for="inputPassword4" class="form-label">ESTADO</label>
+            <select id="inputState" class="form-select">
+                <option selected>seleccionar...</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <label for="inputAddress" class="form-label">ENTORNO</label>
+            <select id="inputState" class="form-select">
+                <option selected>seleccionar...</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <label for="inputAddress2" class="form-label">FECHA CREACION</label>
+            <input type="date" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+
+        <div class="col-md-12">
+            <label for="inputState" class="form-label">DESCRIPCION</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="col-4">
+            <button type="submit" class="btn btn-outline-primary">GUARDAR</button>
+        </div>
+        <div class="col-4">
+            <button type="submit" class="btn btn-outline-primary">AGREGAR SECUENCIA</button>
+        </div>
+        <div class="col-4">
+            <button [routerLink]="['/busqueda']"  type="submit" class="btn btn-outline-primary">SALIR</button>
+        </div>
+
+    </form>
+
+</div>
