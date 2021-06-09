@@ -1,19 +1,23 @@
+import { LoginComponent } from './login/login.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {FichaComponent} from '../app/ficha/ficha.component'
  
-
 const routes: Routes = [
 
   {
-    path: '',
+    path: 'home',
     component: FichaComponent
   },
   {
     path: 'busqueda',
     component: BusquedaComponent
   },
+  {
+    path: '',
+    component: LoginComponent
+  }
 ];
 
 @NgModule({
