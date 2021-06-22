@@ -1,8 +1,11 @@
+import { DetalleFormComponent } from './detalle-form/detalle-form.component';
+ 
 import { LoginComponent } from './login/login.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {FichaComponent} from '../app/ficha/ficha.component'
+ 
  
 const routes: Routes = [
 
@@ -13,6 +16,10 @@ const routes: Routes = [
   {
     path: 'busqueda',
     component: BusquedaComponent
+  },
+  {
+    path: 'secuencia',
+    component: DetalleFormComponent
   },
   {
     path: '',

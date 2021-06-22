@@ -10,6 +10,7 @@ import { DetalleComponent } from './detalle/detalle.component';
 import { FichaComponent } from './ficha/ficha.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { LoginComponent } from './login/login.component';
+import { DetalleFormComponent } from './detalle-form/detalle-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginComponent } from './login/login.component';
     DetalleComponent,
     FichaComponent,
     BusquedaComponent,
-    LoginComponent
+    LoginComponent,
+    DetalleFormComponent
   ],
   imports: [
     BrowserModule,
