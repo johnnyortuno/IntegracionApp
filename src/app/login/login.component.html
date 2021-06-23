@@ -1,0 +1,31 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+
+
+        <!-- Login Form -->
+        <form class="form-signin">
+            <img class="mb-4" src="../../assets/logo-ypf.svg" alt="" width="72"
+                height="72">
+            <h1 class="h3 mb-3 font-weight-normal">LOGIN</h1>
+            <div class="row"> 
+                <div class="col-md-12 text-center ">
+                 <label for="inputEmail" class="sr-only">USUARIO</label>
+                 <input type="email" id="inputEmail" class="form-control" placeholder="USUARIO" required autofocus>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-md-12 text-center ">
+                    <label for="inputPassword" class="sr-only">CLAVE</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="CLAVE" required>       
+                  </div>
+            </div>   
+
+            <br>
+            <button  [routerLink]="['/busqueda']" class="btn btn-lg btn-primary btn-block" type="submit">INGRESAR</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+        </form>
+
+    </div>
+</div>

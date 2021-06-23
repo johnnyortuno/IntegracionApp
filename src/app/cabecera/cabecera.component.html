@@ -1,0 +1,65 @@
+
+<div>
+    <form class="row g-3">
+        <div class="my-3 p-3 bg-body rounded shadow-sm">   
+            <div class="row"> 
+                <div class="col-md-4">
+                    <label for="inputEmail4" class="form-label text-bold">Identificador del CI</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Indentificador del CI">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPassword4" class="form-label text-bold">Identificación del Activo</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Identificación  Activo">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPassword4" class="form-label text-bold">Estado</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>seleccionar...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-4">
+                    <label for="inputAddress" class="form-label text-bold">Entorno</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>seleccionar...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-8">
+                    <label for="inputState" class="form-label text-bold">Descripción</label>                   
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Descripcion">
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-md-4 ">
+                    <br> 
+                  </div>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group text-center">
+                <div class="divider-10"></div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group text-center">
+                <div class="divider-10"></div>
+                <button [routerLink]="['/secuencia']"    type="submit" class="btn btn-primary">Agregar Secuencia</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group text-center">
+                <div class="divider-10"></div>
+                <button [routerLink]="['/busqueda']"   type="submit" class="btn btn-primary">Salir</button>
+            </div>
+        </div>
+    </div>     
+   </form>
+
+
+</div>

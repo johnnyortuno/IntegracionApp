@@ -1,0 +1,59 @@
+<app-home></app-home>
+<div class="row">            
+    <div class="col-md-4 ">
+      <br> 
+    </div>
+</div>  
+<div class="panel panel-primary">
+   <div>
+       
+        <div class="row">            
+            <div class="col-md-4 ">
+              <br> 
+            </div>
+        </div>  
+        <form class="row g-3">
+
+        <div class="row"> 
+            <div class="col-md-4">
+                <label for="idIdetificadorCI" class="form-label text-bold">Identificador del CI</label>
+                <input type="text" class="form-control" id="idIdetificadorCI" placeholder="Indentificador del CI">
+            </div>
+            <div class="col-md-4">
+                <label for="idInterfaces" class="form-label text-bold">ID Interface</label>
+                <input type="text" class="form-control" id="idInterfaces" placeholder="ID de la Interfaz">
+            </div>
+            <div class="col-md-4">
+                <label for="idEstados" class="form-label text-bold">Estados</label>
+                <select id="idEstados" class="form-select">
+                    <option selected>seleccionar...</option>
+                    <option>ACTIVO</option>
+                    <option>INACTIVO</option>
+                </select>
+            </div>
+        </div>        
+        <div class="row">            
+            <div class="col-md-4 ">
+              <br> 
+            </div>
+        </div>  
+       
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group text-center">
+                    <div class="divider-10"></div>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+        </div>
+
+        </form>
+    </div>
+    <div class="row">            
+        <div class="col-md-4 ">
+          <br> 
+        </div>
+    </div>  
+    <app-detalle></app-detalle>
+
+</div>
