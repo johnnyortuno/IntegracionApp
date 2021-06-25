@@ -11,11 +11,11 @@
 
     <hr />
     <div class="container my-3 p-3 bg-body rounded shadow-sm ">
-        <form>
+        <form [formGroup]="detalleform" (ngSubmit)="onSubmit()">
             <div class="row">              
                 <div class="col-md-8">
-                    <label for="inputPassword4" class="form-label">Middleware</label>
-                    <input type="text" class="form-control" id="inputPassword4">
+                    <label for="Middleware" class="form-label">Middleware</label>
+                    <input id="Middleware"  type="text" class="form-control" formControlName="Middleware">
                 </div>
                 <div class="col-md-4">
                     <label for="inputPassword4" class="form-label">Estado</label>
@@ -36,60 +36,60 @@
                 <div class="col-md-5 shadow-lg p-3 mb-5 bg-white rounded">
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Descripción  Secuencia Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="SecuenciaOrigen" class="form-label">Descripción  Secuencia Origen</label>
+                            <input id="SecuenciaOrigen"  type="text" class="form-control"  formControlName="SecuenciaOrigen">
                         </div>
                     </div>   
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Nombre Aplicación/Instancia Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="InstanciaOrigen" class="form-label">Nombre Aplicación/Instancia Origen</label>
+                            <input id="InstanciaOrigen"  type="text" class="form-control" formControlName="InstanciaOrigen" >
                         </div>
                     </div>   
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Tipo Conexión Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4"> 
+                            <label for="ConexionOrigen" class="form-label">Tipo Conexión Origen</label>
+                            <input id="ConexionOrigen"  type="text" class="form-control" formControlName="ConexionOrigen" > 
                         </div>
                     </div>   
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Usuario de Comunicación Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="ComunicacionOrigen" class="form-label">Usuario de Comunicación Origen</label>
+                            <input id="ComunicacionOrigen"  type="text" class="form-control" formControlName="UsuarioComunicaciónOrigen" >
                         </div>
                     </div>   
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Certificado  Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="CertificadoOrigen" class="form-label">Certificado  Origen</label>
+                            <input id="CertificadoOrigen"  type="text" class="form-control" formControlName="CertificadoOrigen" >
                         </div>
                     </div>    
                     
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Job Relacionado Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="JobRelacionadoOrigen" class="form-label">Job Relacionado Origen</label>
+                            <input id="JobRelacionadoOrigen"  type="text" class="form-control" formControlName="JobRelacionadoOrigen" >
                         </div>                    
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Celula Responsable Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4">  
+                            <label for="CelulaResponsableOrigen" class="form-label">Celula Responsable Origen</label>
+                            <input id="CelulaResponsableOrigen"  type="text" class="form-control" formControlName="CelulaResponsableOrigen" > 
                         </div>                    
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Conector Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="ConectorOrigen" class="form-label">Conector Origen</label>
+                            <input id="ConectorOrigen"  type="text" class="form-control" formControlName="ConectorOrigen" > 
                         </div>                    
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Sistema Logico Origen</label>
-                            <input type="text" class="form-control" id="inputPassword4"> 
+                            <label for="SistemaLogicoOrigen" class="form-label">Sistema Logico Origen</label>
+                            <input id="SistemaLogicoOrigen"  type="text" class="form-control" formControlName="SistemaLogicoOrigen"> 
                         </div>                    
                     </div>
 
@@ -98,68 +98,64 @@
                            
                         </div>                    
                     </div>
-
-
-
-
                 </div>
                 <div class="col-md-1">                   
                   </div>
                 <div class="col-md-6 shadow-lg p-3 mb-5 bg-white rounded">
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Descripción  Secuencia Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="SecuenciaDestino" class="form-label">Descripción  Secuencia Destino</label>
+                            <input id="SecuenciaDestino"  type="text" class="form-control"  formControlName="SecuenciaDestino">
                         </div>                    
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Nombre Aplicación/Instancia Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4">  
+                            <label for="InstanciaDestino" class="form-label">Nombre Aplicación/Instancia Destino</label>
+                            <input id="InstanciaDestino"  type="text" class="form-control"  formControlName="InstanciaDestino">
                         </div>                    
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Tipo Conexión Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="ConexionDestino" class="form-label">Tipo Conexión Destino</label>
+                            <input id="ConexionDestino"  type="text" class="form-control"  formControlName="ConexionDestino">
                         </div>                    
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Usuario de Comunicación Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="UsuarioComunicaciónOrigen" class="form-label">Usuario de Comunicación Destino</label>
+                            <input id="UsuarioComunicaciónOrigen"  type="text" class="form-control"  formControlName="UsuarioComunicaciónOrigen">
                         </div>                    
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Certificado  Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="CertificadoDestino" class="form-label">CertificadoDestino</label>
+                            <input id="CertificadoDestino"  type="text" class="form-control"  formControlName="CertificadoDestino">
                         </div>                    
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Job Relacionado Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="JobRelacionadoDestino" class="form-label">Job Relacionado Destino</label>
+                            <input id="JobRelacionadoDestino"  type="text" class="form-control"  formControlName="JobRelacionadoDestino">
                         </div>                    
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Celula Responsable Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4">
-                        </div>                    
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="inputAddress" class="form-label">Conector Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4">
+                            <label for="CelulaResponsableDestino" class="form-label">Celula Responsable Destino</label>
+                            <input id="CelulaResponsableDestino"  type="text" class="form-control"  formControlName="CelulaResponsableDestino">
                         </div>                    
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Sistema Logico Destino</label>
-                            <input type="text" class="form-control" id="inputPassword4"> 
+                            <label for="ConectorDestino" class="form-label">Conector Destino</label>
+                            <input id="ConectorDestino"  type="text" class="form-control"  formControlName="ConectorDestino">
+                        </div>                    
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="SistemaLogicoDestino" class="form-label">Sistema Logico Destino</label>
+                            <input id="SistemaLogicoDestino"  type="text" class="form-control"  formControlName="SistemaLogicoDestino">
                         </div>                    
                     </div>
 
