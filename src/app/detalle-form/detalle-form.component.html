@@ -17,12 +17,16 @@
                     <label for="Middleware" class="form-label">Middleware</label>
                     <input id="Middleware"  type="text" class="form-control" formControlName="Middleware">
                 </div>
-                <div class="col-md-4">
-                    <label for="inputPassword4" class="form-label">Estado</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>seleccionar...</option>
-                        <option>...</option>
-                    </select>
+                <div class="col-md-4">                    
+                    <section>
+                        <label for="estados"  class="form-label text-bold">Estado</label>
+                        <select formControlName="Estados">
+                          <option [ngValue]="null" disabled>Seleccionar</option>  
+                          <option *ngFor="let item of estadoSolicitud" [ngValue]="item.id">
+                            <span>{{ item.descripcion }}</span>
+                          </option>
+                        </select>
+                      </section>
                 </div>
             </div>
                       
