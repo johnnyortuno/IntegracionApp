@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormArray,Validators, FormControl } from '@angular/forms';
 
 
+
+
+
 @Component({
   selector: 'app-detalle-form',
   templateUrl: './detalle-form.component.html',
@@ -19,8 +22,8 @@ export class DetalleFormComponent implements OnInit {
 
 // Objeto  datos de la vista  detalle
   detalleform = new FormGroup({
-    Middleware: new FormControl(''),
-    Estado: new FormControl(''),
+    Middleware: new FormControl(''), 
+    Estados : new   FormControl(''),
     SecuenciaOrigen: new FormControl(''),
     SecuenciaDestino: new FormControl(''),
     InstanciaOrigen: new FormControl(''),
@@ -42,6 +45,10 @@ export class DetalleFormComponent implements OnInit {
 
   });
 
+  public estadoSolicitud  = [
+    { id: 1, descripcion: 'Activo' },
+    { id: 2, descripcion: 'Inactivo' }   
+  ];
 
   // Eventos de la vista  
   onSubmit() {
